@@ -1,0 +1,23 @@
+@font-face {
+            font-family:'Calibri';  
+            src: local('calibri'),
+                 local('Calibri'),
+                 local('CALIBRI'),
+                 url('font/calibri.eot')
+                 format('opentype');
+            src: local('calibri'),
+                 local('Calibri'),
+                 local('CALIBRI'),                 
+                 url('font/calibri.otf')
+                 format('opentype');
+            src: local('calibri'),
+                 local('Calibri'),
+                 local('CALIBRI'),                 
+                 url('font/calibri.woff')
+                 format('opentype');                 
+            src: local('calibri'),
+                 local('Calibri'),
+                 local('CALIBRI'),                 
+                 url('font/calibri.ttf')
+                 format('truetype');
+           }

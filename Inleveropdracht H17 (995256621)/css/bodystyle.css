@@ -1,0 +1,125 @@
+
+@charset "UTF-8";
+
+@import url("fontstyle.css")screen;
+@import url("responsivestyle.css")screen;
+@import url("w3.css")screen;
+
+h1 {
+    font-weight:bolder;
+    font-style:oblique; 
+    
+   }
+
+h3 {
+    color:#0080C0;
+    font-weight:bold;
+    font-size:200%;
+   }        
+
+h4 {
+    color:#2c5506;
+   }
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: black;
+    color: white;
+  }
+
+.wedstrijdprogramma {
+  text-align: center;
+}
+
+.datum, .tijd, .thuis, .tegenstander, .plaats {
+  text-align: center;
+}
+
+.thuis{
+  color: #2c5506;
+}
+.tegenstander{
+  color: red;
+}
+
+.verjaardagen {
+    background-color: #FFFFFF;
+}
+
+.sponsoren {
+    background-color: #FFFFFF;  
+    }
+
+.mySlides{
+  display: none;
+  width: 100%;
+  background-color: #4CAF50;
+  max-height: 70%;
+ }
+
+.redbutton {
+    background: #0f4c81;
+    background-image: -webkit-linear-gradient(top, #0f4c81, #005082);
+    background-image: -moz-linear-gradient(top, #0f4c81, #005082);
+    background-image: -ms-linear-gradient(top, #0f4c81, #005082);
+    background-image: -o-linear-gradient(top, #0f4c81, #005082);
+    background-image: linear-gradient(to bottom, #0f4c81, #005082);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    height: 20px;
+    line-height: 1px;
+    color: #FFFFFF;
+    font-family: 'Calibri', sans-serif;
+    width: 185px;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 8px;
+    box-shadow: 1px 1px 6px 0px #000000;
+    -webkit-box-shadow: 1px 1px 6px 0px #000000;
+    -moz-box-shadow: 1px 1px 6px 0px #000000;
+    text-shadow: 1px 1px 6px #000000;
+    border: solid #424949 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    }
+    
+.redbutton:hover {
+    border: solid #66BFBF 1px;
+    background: #005082;
+    background-image: -webkit-linear-gradient(top, #aeefec, #0f4c81);
+    background-image: -moz-linear-gradient(top, #aeefec, #0f4c81);
+    background-image: -ms-linear-gradient(top, #aeefec, #0f4c81);
+    background-image: -o-linear-gradient(top, #aeefec, #0f4c81);
+    background-image: linear-gradient(to bottom, #aeefec, #0f4c81);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    }
+
+.footer-link {
+    padding: 20px 0 20px;
+    }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>W3Data JavaScript applicaties</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bodystyle.css" rel="stylesheet" type="text/css" />
+
+<script src="javascript/w3data.js"></script>
+
+<script>
+var myObject = {"Cartoons":
+[
+{"CartoonName":"Flintstones, The",           "Year":"1960-1966","Subtitle":"Engels",    "Color":"w3-red",     "Size":"w3-xlarge"},
+{"CartoonName":"Jetsons, The",               "Year":"1962-1963","Subtitle":"Engels",    "Color":"w3-blue",    "Size":""},
+{"CartoonName":"Squiddly Diddly",            "Year":"1965-1966","Subtitle":"geen",      "Color":"w3-yellow",  "Size":"w3-xlarge"},
+{"CartoonName":"Speed Racer",                "Year":"1967",     "Subtitle":"Nederlands","Color":"w3-green",   "Size":""},
+{"CartoonName":"13 Ghosts of Scooby Doo",    "Year":"1985",     "Subtitle":"Nederlands","Color":"w3-khaki",   "Size":"w3-xlarge"},
+{"CartoonName":"Adventures of Gulliver, The","Year":"1968",     "Subtitle":"Engels",    "Color":"w3-pale-red","Size":""},
+{"CartoonName":"Funky Phantom, The",         "Year":"1971",     "Subtitle":"geen",      "Color":"w3-orange",  "Size":"w3-xlarge"}
+]};
+</script>
+
+</head>
+
+<body>
+
+<!-- ------------------------------------------------
+     Een Dropdown menu samenstellen vanuit de dataset
+     ------------------------------------------------  -->
+<p>
+<select id="id01">
+<option w3-repeat="Cartoons">{{CartoonName}}</option>
+</select>
+
+<script>
+w3DisplayData("id01", myObject);
+</script> 
+</p>
+
+<!-- -----------------------------------
+     Een lijst maken vanuit de dataseset 
+	 -----------------------------------  -->
+<p>
+<ul id="id02">
+  <li w3-repeat="Cartoons">{{CartoonName}}&emsp;{{Year}}&emsp;{{Subtitle}}</li>
+</ul>
+
+<script>
+w3DisplayData("id02", myObject);
+</script>
+</p>
+
+<!-- ------------------------------------------------------------
+     Aankruisvakjes voor formuliergebruik maken vanuit de dataset
+	 ------------------------------------------------------------ -->
+<p>
+<table id="id03">
+  <tr w3-repeat="Cartoons">
+    <td>{{CartoonName}}</td>
+    <td><input type="checkbox" {{checked}}"></td>
+  </tr>
+</table>
+
+<script>
+w3DisplayData("id03", myObject);
+</script>
+</p>
+
+<!-- --------------------------------------------
+     Classes met kleuren vullen vanuit de dataset
+	 -------------------------------------------- -->
+<p>
+<table id="id04">
+  <tr w3-repeat="Cartoons" class="{{Color}}">
+    <td>{{CartoonName}}</td>
+  </tr>
+</table>
+
+<script>
+w3DisplayData("id04", myObject);
+</script>
+</p>
+
+<!-- -------------------------------------------------------------------------
+     Afwisselen van groot lettertype naar normaal lettertype vanuit de dataset
+	 ------------------------------------------------------------------------- -->
+<p>
+<table id="id05" class="w3-table w3-bordered w3-striped">
+  <tr w3-repeat="Cartoons" class="{{Size}}">
+    <td>{{CartoonName}}</td>
+  </tr>
+</table>
+
+<script>
+w3DisplayData("id05", myObject);
+</script>
+</p>
+
+<!-- ---------------------------------------------
+     Een gegevenstabel vanuit de dataset genereren
+	 --------------------------------------------- --> 
+<p>
+<table id="id06">
+  <tr>
+    <th>Naam cartoon</th>
+    <th>Productiejaar</th>
+    <th>Ondertiteling</th>
+  </tr>
+  <tr w3-repeat="Cartoons">
+  <td>{{CartoonName}}</td>
+  <td>{{Year}}</td>
+  <td>{{Subtitle}}</td>
+  </tr>
+</table>
+
+<script>
+w3DisplayData("id06", myObject);
+</script>
+</p>
+
+  </body>
+</html>
